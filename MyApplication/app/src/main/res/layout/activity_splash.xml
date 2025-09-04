@@ -12,12 +12,10 @@
         android:id="@+id/splashText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ellipsize="none"
+        android:layout_centerInParent="true"
         android:text=""
         android:textColor="#0B0A0A"
         android:textSize="30sp"
-        android:textStyle="bold"
-
-        />
+        android:textStyle="bold" />
 
 </RelativeLayout>

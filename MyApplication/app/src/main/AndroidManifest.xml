@@ -12,28 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".Home"
+            android:name=".EnglishNews"
+            android:exported="false" />
+        <activity
+            android:name=".BanglaNews"
+            android:exported="false" /> <!-- Splash কে Launcher বানালাম -->
+        <activity
+            android:name=".Splash"
             android:exported="true"
             android:theme="@style/Theme.MyApplication">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity>
-
-
+        </activity> <!-- Home এখন normal activity -->
         <activity
-            android:name=".Splash"
-            android:exported="false" />
+            android:name=".Home"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name">
-
-        </activity>
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

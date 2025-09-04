@@ -17,37 +17,26 @@ public class Splash extends AppCompatActivity {
 
     private TextView splashText;
 
-    private String message ="Welcome to our Online News";
-
+    private String message = "Welcome to our Online News";
     private int index = 0;
-
     private long delay = 150;
 
-
     private Handler handler = new Handler(Looper.getMainLooper());
-
 
     private Runnable characterAdder = new Runnable() {
         @Override
         public void run() {
+            if (index < message.length()) {
+                splashText.setText(message.substring(0, index + 1));
+                index++;
+                handler.postDelayed(this, delay);
+            } else {
 
-            splashText.setText(message.substring(0,index++));
-
-            if(index <= message.length()){
-                handler.postAtTime(characterAdder , delay);
-            }
-            else {
-
-                handler.postDelayed(()->{
-
+                handler.postDelayed(() -> {
                     startActivity(new Intent(getApplicationContext(), Home.class));
                     finish();
-                } , 3000);
-
-
-
+                }, 3000);
             }
-
         }
     };
 
@@ -57,17 +46,14 @@ public class Splash extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
-
         splashText = findViewById(R.id.splashText);
 
 
         handler.postDelayed(characterAdder, delay);
-
     }
 
-
     @Override
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
         handler.removeCallbacks(characterAdder);
     }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+
+    <string name="des"> In today’s digital world, online news spreads faster than ever. Yet, with speed comes the danger of misinformation. Fake stories and misleading headlines can misguide millions. Journalists must verify facts, stay unbiased, and prioritize truth over clicks. Readers also bear responsibility to check sources before sharing. Truth in online news builds trust, strengthens democracy, and informs society correctly. In a world of rumors, staying vigilant for the truth is essential for both media and readers alike.</string>
 </resources>
