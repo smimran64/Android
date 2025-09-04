@@ -1,12 +1,12 @@
 package com.example.myapplication.testApp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-
+import android.widget.ImageButton;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class BanglaNews extends AppCompatActivity {
 
@@ -15,10 +15,22 @@ public class BanglaNews extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_bangla_news);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+
+
+        ImageButton btnProthomAlo = findViewById(R.id.btnProthomAlo);
+
+
+        btnProthomAlo.setOnClickListener(v -> {
+
+            String url = "https://www.prothomalo.com";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
         });
+
+//      ImageButton btnBangladeshProtidin = findViewById(R.id.btnBangladeshProtidin);
+//
+//      btnBangladeshProtidin.setOnClickListener();
+
     }
 }
