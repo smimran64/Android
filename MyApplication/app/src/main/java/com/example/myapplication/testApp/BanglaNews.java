@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class BanglaNews extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,9 +29,126 @@ public class BanglaNews extends AppCompatActivity {
             startActivity(intent);
         });
 
-//      ImageButton btnBangladeshProtidin = findViewById(R.id.btnBangladeshProtidin);
-//
-//      btnBangladeshProtidin.setOnClickListener();
+      ImageButton btnBangladeshProtidin = findViewById(R.id.btnBangladeshProtidin);
+
+      btnBangladeshProtidin.setOnClickListener(v ->
+
+              {
+                  String url ="https://www.bd-pratidin.com/";
+
+                  Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                  startActivity(intent);
+
+              }
+
+              );
+
+      ImageButton btnBBCBangla = findViewById(R.id.btnBBCBangla);
+
+      btnBBCBangla.setOnClickListener(v ->
+              {
+                  String url ="https://www.bbc.com/bengali";
+
+                  Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                  startActivity(intent);
+              }
+
+
+              );
+
+
+        ImageButton btnAmardesh = findViewById(R.id.btnAmardesh);
+
+        btnAmardesh.setOnClickListener(v ->
+                {
+                    String url ="https://www.dailyamardesh.com/";
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                    startActivity(intent);
+                }
+
+
+        );
+
+
+        ImageButton btnIttefuqe = findViewById(R.id.btnIttefuque);
+
+        btnIttefuqe.setOnClickListener(v ->
+                {
+                    String url ="https://www.ittefaq.com.bd/";
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                    startActivity(intent);
+                }
+
+
+        );
+
+
+
+        ImageButton btnInkilab = findViewById(R.id.btnInqilab);
+
+        btnInkilab.setOnClickListener(v ->
+                {
+                    String url ="https://dailyinqilab.com/";
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                    startActivity(intent);
+                }
+
+
+        );
+
+
+        ImageButton btnManabJamin = findViewById(R.id.btnManabJamin);
+
+        btnManabJamin.setOnClickListener(v ->
+                {
+                    String url ="https://mzamin.com/";
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                    startActivity(intent);
+                }
+
+
+        );
+
+
+        ImageButton btnKalerKantho = findViewById(R.id.btnKalerKantho);
+
+        btnKalerKantho.setOnClickListener(v ->
+                {
+                    String url ="https://mzamin.com/";
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                    startActivity(intent);
+                }
+
+
+        );
+
+
+        ImageButton btnJaijaidin = findViewById(R.id.btnJaijaidin);
+
+        btnJaijaidin.setOnClickListener(v ->
+                {
+                    String url ="https://www.jaijaidinbd.com/";
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                    startActivity(intent);
+                }
+
+
+        );
+
 
     }
 }
