@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
@@ -56,11 +57,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         refreshButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
+
                 String cityName = cityNameInput.getText().toString();
 
                 if (!cityName.isEmpty()) {
+
                     FetchWeatherData(cityName);
 
                 }
@@ -77,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void FetchWeatherData(String cityName) {
+
         String url = "https:api.openweathermap.org/data/2.5/weather?q="+ cityName + "&appid=" + API_KEY + "&units=metric";
 
         ExecutorService executorService = Executors.newSingleThreadExecutor();
@@ -90,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
                     Request request = new Request.Builder().url(url).build();
 
                     try {
+
                         Response response = client.newCall(request).execute();
                         String result = response.body().string();
                         runOnUiThread(() -> updateUI(result));
@@ -139,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         }catch (JSONException e){
+
             e.printStackTrace();
 
         }
