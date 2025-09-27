@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        cityNameTex = findViewById(R.id.cityName);
+                                                                                                                                                                                                                                                                             cityNameTex = findViewById(R.id.cityName);
         temperatureText = findViewById(R.id.temperature);
         humidityText = findViewById(R.id.humidityText);
         windText = findViewById(R.id.windText);

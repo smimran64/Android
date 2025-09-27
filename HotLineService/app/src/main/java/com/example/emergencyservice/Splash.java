@@ -1,4 +1,5 @@
-package com.example.myapplication.testApp;
+package com.example.emergencyservice;
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,10 +10,7 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-public class Splash extends AppCompatActivity {
-
-
+public class Splash extends AppCompatActivity{
     private TextView splashText;
 
     private String message = "Welcome to our Online News";

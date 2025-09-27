@@ -4,4 +4,6 @@
     <style name="Theme.WeatherApp" parent="android:Theme.Material.Light.NoActionBar" />
 
     <style name="Theme.TicTacToe" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.HotLineService" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>
