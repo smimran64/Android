@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme for AppCompatActivity -->
+    <style name="Theme.HotLineService" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- এখানে চাইলে colorPrimary, colorAccent ইত্যাদি define করতে পারো -->
+    </style>
+</resources>
