@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bangla"
+    tools:context=".BanglaNews">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="213dp"
+        android:layout_height="71dp"
+        android:text="@string/bgTheme"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+
+        />
+
+    <ImageButton
+
+        android:id="@+id/btnProthomAlo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/prothomalo"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Prothom Alo Button"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+
+        >
+
+    </ImageButton>
+
+    <ImageButton
+
+        android:id="@+id/btnBangladeshProtidin"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bangladeshpratidin"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Bangladesh Protidin Button"
+        app:layout_constraintTop_toBottomOf="@+id/btnProthomAlo"
+
+        >
+
+    </ImageButton>
+
+
+    <ImageButton
+
+        android:id="@+id/btnBBCBangla"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bbcbangla"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="BBC Bangla Button"
+        app:layout_constraintTop_toBottomOf="@+id/btnBangladeshProtidin"
+
+        >
+
+    </ImageButton>
+
+    <ImageButton
+
+        android:id="@+id/btnAmardesh"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/amardesh"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Amar Desh Button"
+        app:layout_constraintTop_toBottomOf="@+id/btnBBCBangla"
+
+        >
+
+    </ImageButton>
+
+
+    <ImageButton
+
+        android:id="@+id/btnIttefuque"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/ittefuqe"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Ittefuque Button"
+        app:layout_constraintTop_toBottomOf="@+id/btnAmardesh"
+
+        >
+
+    </ImageButton>
+
+
+    <ImageButton
+
+        android:id="@+id/btnInqilab"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/inqilablogo"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Inqilab Button"
+        app:layout_constraintTop_toBottomOf="@+id/btnIttefuque"
+
+        >
+
+    </ImageButton>
+
+    <ImageButton
+
+        android:id="@+id/btnManabJamin"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/manabzamin"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Manab Jamin Button"
+        app:layout_constraintTop_toBottomOf="@+id/btnInqilab"
+
+        >
+
+    </ImageButton>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

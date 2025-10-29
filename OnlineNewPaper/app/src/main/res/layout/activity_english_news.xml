@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/english"
+    tools:context=".EnglishNews">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:text="Ever vigilant in the pursuit of truth."
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textColor="#F81212"
+        android:textSize="27sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+
+        />
+
+
+    <ImageButton
+
+        android:id="@+id/btnDailyStar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dailystar"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Prothom Alo Button"
+        android:layout_below="@+id/textView2"
+
+        >
+
+    </ImageButton>
+
+
+    <ImageButton
+
+        android:id="@+id/btnDailySun"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dailysun"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Prothom Alo Button"
+        android:layout_below="@+id/btnDailyStar"
+
+        >
+
+    </ImageButton>
+
+
+    <ImageButton
+
+        android:id="@+id/btnDhakaTribune"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dhakatribune"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Prothom Alo Button"
+        android:layout_below="@+id/btnDailySun"
+
+        >
+
+    </ImageButton>
+
+
+    <ImageButton
+
+        android:id="@+id/btnDailyObserver"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/dailyobserber"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Prothom Alo Button"
+        android:layout_below="@+id/btnDhakaTribune"
+
+        >
+
+    </ImageButton>
+
+
+    <ImageButton
+
+        android:id="@+id/btnNewAge"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/newage2"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Prothom Alo Button"
+        android:layout_below="@+id/btnDailyObserver"
+
+        >
+
+    </ImageButton>
+
+
+    <ImageButton
+
+        android:id="@+id/btnBBC"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bbcnews"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Prothom Alo Button"
+        android:layout_below="@+id/btnNewAge"
+
+        >
+
+    </ImageButton>
+
+
+    <ImageButton
+
+        android:id="@+id/btnAljazeera"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/aljajira"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Prothom Alo Button"
+        android:layout_below="@+id/btnBBC"
+
+        >
+
+    </ImageButton>
+
+
+
+
+</RelativeLayout>
